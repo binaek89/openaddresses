@@ -25,9 +25,14 @@
     "coverage": {
         "state": "seoul",
         "city": "도봉구",
-        "country": "kr"
+        "country": "kr",
+        "geometry": { "type": "Point", "coordinates": [127.030, 37.667] }
     },
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "compression": "zip",
     "data": "http://s3.amazonaws.com/data.openaddresses.io/cache/kr-seoul-tobonggu.zip"
 }

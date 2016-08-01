@@ -15,9 +15,13 @@
     "conform": {
         "number": "HOUSENUM",
         "street": [
+            "PREFIX",
             "NAME",
-            "TYPE"
+            "TYPE",
+            "SUFFIX"
         ],
+        "unit": "UNITNUM",
+        "city": "MUNI",
         "type": "shapefile"
     }
 }

@@ -1,5 +1,17 @@
 {
     "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.137,
+                40.556
+            ]
+        },
+        "US Census": {
+            "geoid": "0827425",
+            "name": "City of Fort Collins",
+            "state": "Colorado"
+        },
         "country": "us",
         "state": "co",
         "city": "Fort Collins"
@@ -12,6 +24,11 @@
     "conform": {
         "number": "number",
         "street": "strname",
+        "unit": [
+          "BUILDING",
+          "UNIT"
+        ],
+        "postcode": "zip",
         "type": "shapefile"
     }
 }

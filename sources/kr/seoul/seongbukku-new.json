@@ -4,7 +4,8 @@
     "coverage": {
         "country": "kr",
         "city": "성북구",
-        "state": "seoul"
+        "state": "seoul",
+        "geometry": { "type": "Point", "coordinates": [127.022, 37.599] }
     },
     "conform": {
         "headers": 2,
@@ -27,7 +28,11 @@
     },
     "skip": true,
     "compression": "zip",
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "website": "http://data.seoul.go.kr/openinf/sheetview.jsp?infId=OA-1082",
     "data": "http://s3.amazonaws.com/data.openaddresses.io/cache/kr-seoul-seongbukku.zip"
 }

@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -86.771,
+                34.755
+            ]
+        },
+        "US Census": {
+            "geoid": "5573725",
+            "name": "City of Huntsville",
+            "state": "Alabama"
+        },
+        "country": "us",
+        "state": "al",
+        "city": "Huntsville"
+    },
+    "data": "http://maps.huntsvilleal.gov/arcgis/rest/services/Layers/Addresses/MapServer/3",
+    "type": "ESRI",
+    "website": "http://maps.huntsvilleal.gov",
+    "attribution": "City of Huntsville",
+    "conform": {
+        "type": "geojson",
+        "number": "address",
+        "street": "street_name",
+        "city": "mail_city",
+        "district": "mail_county",
+        "postcode": "zipcode"
+    }
+}

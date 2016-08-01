@@ -15,9 +15,15 @@
     "type": "http",
     "compression": "zip",
     "conform": {
-        "split": "address",
-        "number": "auto_number",
-        "street": "auto_street",
+        "number": {
+            "function": "regexp",
+            "field": "address",
+            "pattern": "^([0-9]+)"
+        },
+        "street": "BASENAME",
+        "unit": "UNIT",
+        "city": "CITY",
+        "region": "STATE",
         "type": "shapefile",
         "postcode": "zip"
     }

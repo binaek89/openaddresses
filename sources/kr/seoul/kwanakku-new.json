@@ -22,11 +22,16 @@
     "coverage": {
         "country": "kr",
         "city": "관악구",
-        "state": "seoul"
+        "state": "seoul",
+        "geometry": { "type": "Point", "coordinates": [126.948, 37.467] }
     },
     "skip": true,
     "compression": "zip",
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "website": "http://data.seoul.go.kr/openinf/sheetview.jsp?infId=OA-1070",
     "type": "http",
     "data": "http://s3.amazonaws.com/data.openaddresses.io/cache/kr-seoul-kwanakku.zip"

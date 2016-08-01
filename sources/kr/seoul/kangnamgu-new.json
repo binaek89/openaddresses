@@ -22,9 +22,14 @@
     "coverage": {
         "city": "강남구",
         "state": "seoul",
-        "country": "kr"
+        "country": "kr",
+        "geometry": { "type": "Point", "coordinates": [127.051, 37.501] }
     },
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "website": "http://data.seoul.go.kr/openinf/sheetview.jsp?infId=OA-1064",
     "skip": true,
     "type": "http",

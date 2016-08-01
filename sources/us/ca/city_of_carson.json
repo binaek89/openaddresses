@@ -7,6 +7,11 @@
                 33.83
             ]
         },
+        "US Census": {
+            "geoid": "0611530",
+            "name": "City of Carson",
+            "state": "California"
+        },
         "country": "us",
         "state": "ca",
         "city": "Carson"
@@ -17,8 +22,16 @@
     "type": "ESRI",
     "conform": {
         "type": "geojson",
-        "number": "SITENUMBER",
-        "street": "SITESTREET",
+        "number": [
+          "SITENUMBER",
+          "SITEFRAC"
+        ],
+        "street": [
+          "SITEPREF",
+          "STREETNAME",
+          "STREETTYPE"
+        ],
+        "unit": "SITEUNIT",
         "city": "SITECITY",
         "postcode": "SITEZIP"
     }

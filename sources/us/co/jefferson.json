@@ -10,13 +10,22 @@
         "county": "Jefferson"
     },
     "attribution": "Jefferson County",
-    "data": "http://jeffco.us/ArcGIS/rest/services/address/MapServer/0",
+    "data": "http://maps.jeffco.us/arcgis/rest/services/jMap/Address/MapServer/0",
     "type": "ESRI",
     "conform": {
-        "split": "ADDRESS",
-        "number": "auto_number",
-        "street": "auto_street",
         "type": "geojson",
-        "postcode": "zip"
+        "id": "ADRUID",
+        "number": [
+            "ADRHSNO",
+            "ADRHSNOSFX"
+        ],
+        "street": [
+            "STRDIRPRE",
+            "STRNAME",
+            "STRTYPE",
+            "STRDIRSFX"
+        ],
+        "unit": "SUBADRUNIT",
+        "postcode": "ZIP"
     }
 }

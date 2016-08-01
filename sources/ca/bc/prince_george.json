@@ -2,7 +2,8 @@
     "coverage": {
         "country": "ca",
         "state": "bc",
-        "city": "Prince George"
+        "city": "Prince George",
+        "geometry": { "type": "Point", "coordinates": [-122.77, 53.93] }
     },
     "data": "http://princegeorge.ca/cityservices/online/odc/Geodata/SiteAddressPoint.zip",
     "website": "http://princegeorge.ca/cityservices/online/odc/Pages/Documents.aspx",
@@ -10,11 +11,22 @@
     "type": "http",
     "compression": "zip",
     "conform": {
-        "number": "AddrNumber",
-        "street": [
-            "StrName",
-            "StrType"
+        "type": "shapefile",
+        "number": [
+            "AddrPrefix",
+            "AddrNumber",
+            "AddrSuffix"
         ],
-        "type": "shapefile"
+        "unit": [
+            "AddrUnitTy",
+            "AddrUnitID"
+        ],
+        "street": [
+            "StrPrefix",
+            "StrName",
+            "StrType",
+            "StrSuffix"
+        ],
+        "city": "Community"
     }
 }

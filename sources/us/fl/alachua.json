@@ -9,16 +9,18 @@
         "state": "fl",
         "county": "Alachua"
     },
-    "attribution": "Alachua County",
-    "data": "http://kate.acpafl.org/ArcGIS/rest/services/basemap/ARM360/MapServer/4",
+    "data": "https://services.arcgis.com/cNo3jpluyt69V8Ek/arcgis/rest/services/AddressPoints/FeatureServer/0",
     "type": "ESRI",
     "conform": {
-        "number": "addrnum",
-        "street": [
-            "roadname",
-            "roadtype"
-        ],
         "type": "geojson",
-        "postcode": "zip"
+        "number": "ADDRNUM",
+        "unit": "UNIT",
+        "street": [
+            "ROADPREDIR",
+            "ROADNAME",
+            "ROADTYPE"
+        ],
+        "postcode": "ZIP",
+        "city": "CITY"
     }
 }

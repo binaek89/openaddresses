@@ -2,16 +2,23 @@
     "coverage": {
         "country": "ca",
         "state": "on",
-        "city": "Waterloo"
+        "county": "Waterloo"
     },
-    "data": "http://maps.waterloo.ca/OpenData/shp.AddressPoints.zip",
-    "website": "http://cityofwaterlooopendata.cloudapp.net/DataBrowser/CityOfWaterlooOpenData/AddressPoints",
-    "license": "http://www.waterloo.ca/en/opendata/opendatawaterloouserlicence.asp",
-    "type": "http",
-    "compression": "zip",
+    "website": "http://www.regionofwaterloo.ca/en/discoveringtheregion/maps.asp",
+    "data": "http://gis.region.waterloo.on.ca/arcgis/rest/services/Basemap/MapServer/4",
+    "type": "ESRI",
     "conform": {
-        "number": "CIVIC_ADDR",
-        "street": "STREET_NM",
-        "type": "shapefile"
+        "type": "geojson",
+        "number": {
+            "function": "regexp",
+            "field": "Location",
+            "pattern": "^([0-9]+)"
+        },
+        "street": {
+            "function": "regexp",
+            "field": "Location",
+            "pattern": "^(?:[0-9]+ )(.*)",
+            "replace": "$1"
+        }
     }
 }

@@ -1,0 +1,22 @@
+{
+    "coverage": {
+        "US Census": {"geoid": "48209", "name": "Hays County", "state": "Texas"},
+        "country": "us",
+        "state": "tx",
+        "county": "Hays"
+    },
+    "data": "http://mapsatbis.com/bisgis/rest/services/HaysWeb/MapServer/0",
+    "type": "ESRI",
+    "conform": {
+        "number": "HaysCad.DBO.Accounts_1.situs_num",
+        "street": [
+            "HaysCad.DBO.Accounts_1.situs_street_prefx",
+            "HaysCad.DBO.Accounts_1.situs_street",
+            "HaysCad.DBO.Accounts_1.situs_street_sufix"
+        ],
+        "city": "HaysCad.DBO.Accounts_1.situs_city",
+        "region": "HaysCad.DBO.Accounts_1.situs_state",
+        "postcode": "HaysCad.DBO.Accounts_1.situs_zip",
+        "type": "geojson"
+    }
+}

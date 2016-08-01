@@ -14,7 +14,17 @@
     "compression": "zip",
     "conform": {
         "number": "ADDR_NUM",
-        "street": "BIGNAME",
+        "street": [
+            "PRE_DIR",
+            "STR_NAME",
+            "STR_TYPE",
+            "SUF_DIR"
+        ],
+        "unit": [
+            "UNIT_TYPE",
+            "UNIT_NUM"
+        ],
+        "postcode": "zip",
         "type": "shapefile"
     }
 }

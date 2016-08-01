@@ -1,5 +1,17 @@
 {
     "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -72.715,
+                41.765
+            ]
+        },
+        "US Census": {
+            "geoid": "0937000",
+            "name": "City of Hartford",
+            "state": "Connecticut"
+        },
         "country": "us",
         "state": "ct",
         "city": "Hartford"
@@ -15,6 +27,7 @@
             "CV_STNAME",
             "CV_STTYPE",
             "CV_STSUFFIX"
-        ]
+        ],
+        "unit": "UNITNUM"
     }
 }

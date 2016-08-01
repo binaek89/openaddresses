@@ -7,18 +7,26 @@
         "country": "us",
         "state": "ma"
     },
-    "data": "https://www.dropbox.com/s/15bzesrcesp5wt2/SHPStatewideParcels.zip?dl=1",
-    "website": "http://www.mass.gov/anf/research-and-tech/it-serv-and-support/application-serv/office-of-geographic-information-massgis/datalayers/ftpl3parcels.html",
-    "license": "Public Domain",
-    "year": "2014",
-    "type": "http",
-    "compression": "zip",
+    "data": "http://gisprpxy.itd.state.ma.us/arcgisserver/rest/services/AGOL/MassGIS_Master_Address_Points/MapServer/0",
+    "website": "http://www.mass.gov/anf/research-and-tech/it-serv-and-support/application-serv/office-of-geographic-information-massgis/",
+    "license": {
+        "text": "Public Domain",
+        "attribution name": "Office of Geographic Information (MassGIS), Commonwealth of Massachusetts, MassIT",
+        "share-alike": false
+    },
+    "type": "ESRI",
     "conform": {
-        "file": "SHPStatewideParcels/L3_TAXPARPOLY_ASSESS.shp",
-        "number": "addr_num",
-        "street": "full_str",
-        "type": "shapefile-polygon",
-        "city": "city",
-        "postcode": "zip"
+        "type": "geojson",
+        "number": "ADDR_NUM",
+        "unit": "UNIT",
+        "street": [
+            "PRE_MOD",
+            "PRE_DIR",
+            "BASE",
+            "POST_MOD",
+            "POST_DIR"
+        ],
+        "city": "TOWN",
+        "postcode": "ZIPCODE"
     }
 }

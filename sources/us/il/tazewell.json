@@ -9,12 +9,20 @@
         "state": "il",
         "county": "Tazewell"
     },
-    "data": "http://services.arcgis.com/pPTAs43AFhhk0pXQ/ArcGIS/rest/services/TazewellCounty_Parcels_Owner/FeatureServer/0",
+    "data": "http://gis.tazewell.com/maps/rest/services/AGS_tazewell_co_il_taxmap_view_no_owner2/MapServer/0/",
     "type": "ESRI",
     "conform": {
-        "split": "prop_street",
-        "number": "auto_number",
-        "street": "auto_street",
-        "type": "geojson"
+        "type": "geojson",
+        "number": {
+            "function": "regexp",
+            "field": "site_address",
+            "pattern": "^([0-9]+)"
+        },
+        "street": {
+            "function": "regexp",
+            "field": "site_address",
+            "pattern": "^(?:[0-9]+ )(.*)",
+            "replace": "$1"
+        }
     }
 }

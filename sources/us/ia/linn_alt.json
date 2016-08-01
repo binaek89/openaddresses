@@ -13,8 +13,21 @@
     "type": "ESRI",
     "conform": {
         "type": "geojson",
-        "split": "PROPADDRESS",
-        "number": "auto_number",
-        "street": "auto_street"
-    }
+        "number": {
+            "function": "regexp",
+            "field": "Address",
+            "pattern": "^([0-9]+)"
+        },
+        "street": {
+            "function": "regexp",
+            "field": "Address",
+            "pattern": "^(?:[0-9]+ )(.*)",
+            "replace": "$1"
+        },
+        "unit": "UnitNo",
+        "city": "city",
+        "id": "GPN"
+    },
+    "skip": true,
+    "note": "timeout"
 }

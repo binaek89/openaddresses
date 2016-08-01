@@ -4,7 +4,8 @@
     "coverage": {
         "country": "kr",
         "city": "강동구",
-        "state": "seoul"
+        "state": "seoul",
+        "geometry": { "type": "Point", "coordinates": [127.142, 37.547] }
     },
     "conform": {
         "skiplines": 2,
@@ -28,6 +29,10 @@
     "compression": "zip",
     "note": "TOS acceptance means files must be manually downloaded. Proof of license present in expandable section near top of dataset webpage.",
     "skip": true,
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "data": "http://s3.amazonaws.com/data.openaddresses.io/cache/kr-seoul-kangdonggu.zip"
 }

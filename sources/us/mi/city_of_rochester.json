@@ -7,6 +7,11 @@
                 42.66
             ]
         },
+        "US Census": {
+            "geoid": "2669035",
+            "name": "City of Rochester Hills",
+            "state": "Michigan"
+        },
         "country": "us",
         "state": "mi",
         "city": "Rochester Hills"
@@ -20,6 +25,8 @@
             "SITESTREETTYPE",
             "SITESUFFIXONE"
         ],
+        "city": "SITECITY",
+        "region": "SITESTATE",
         "postcode": "SITEZIPCODE"
     },
     "data": "http://ww3.rochesterhills.org/arcgis/rest/services/RCSAddressPoints/MapServer/0",

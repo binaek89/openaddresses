@@ -1,22 +1,31 @@
 {
     "coverage": {
-        "geometry": {"type": "Point", "coordinates": [-96.89, 32.95]},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.969,
+                32.986
+            ]
+        },
+        "US Census": {
+            "geoid": "4813024",
+            "name": "City of Carrollton",
+            "state": "Texas"
+        },
         "country": "us",
         "state": "tx",
         "city": "Carrollton"
     },
-    "skip": true,
-    "note": "timeout",
-    "data": "http://maps.cityofcarrollton.com/REST/arcgis/rest/services/BaseMap/MapServer/10",
+    "data": "http://maps.cityofcarrollton.com/arcgis/rest/services/Webclstr1/BaseMap/MapServer/0",
     "type": "ESRI",
     "conform": {
         "type": "geojson",
+        "number": "Address",
         "street": [
-            "STR_DIR",
-            "STR_NAME",
-            "STR_SUF"
+            "Direction",
+            "StreetName",
+            "StreetType"
         ],
-        "number": "STR_NUM",
-        "postcode": "ZIP_CODE"
+        "unit": "AptNo"
     }
 }

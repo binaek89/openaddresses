@@ -1,0 +1,21 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08019",
+            "name": "Clear Creek County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Clear Creek"
+    },
+    "conform": {
+        "type": "geojson",
+        "number": "STREET_NUM",
+        "street": "FULL_NAME",
+        "city": "CITY",
+        "postcode": "Zip_code"
+    },
+    "data": "http://map.co.clear-creek.co.us/arcgis2/rest/services/ClearCreek/address/MapServer/1",
+    "type": "ESRI"
+}

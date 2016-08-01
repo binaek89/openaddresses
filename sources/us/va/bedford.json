@@ -10,10 +10,18 @@
         "county": "Bedford"
     },
     "website": "http://www.co.bedford.va.us/GIS/index.asp",
-    "data": "http://bedfordco.dreamhosters.com/E911AddressGDB.zip",
-    "license": "Indemnification",
+    "data": "http://bedfordco.dreamhosters.com/SHPFiles/E911Address.zip",
+    "license": {
+        "text": "Indemnification",
+        "attribution": false,
+        "share-alike": false
+    },
     "year": "2014",
     "type": "http",
     "compression": "zip",
-    "note": "MDB format, not currently supported"
+    "conform": {
+        "type": "shapefile",
+        "number": "ADDRESS",
+        "street": "ROADNAME"
+    }
 }

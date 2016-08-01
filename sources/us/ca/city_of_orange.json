@@ -1,6 +1,12 @@
-
 {
     "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.890,
+                33.810
+            ]
+        },
         "US Census": {
             "geoid": "0653980",
             "name": "City of Orange",
@@ -18,6 +24,10 @@
         "type": "geojson",
         "number": "ADDRNUM",
         "street": "FULLNAME",
+        "unit": [
+          "UNITTYPE",
+          "UNITID"
+        ],
         "city": "MUNICIPALITY"
     }
 }

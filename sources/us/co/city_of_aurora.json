@@ -1,19 +1,37 @@
 {
     "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -104.861,
+                39.725
+            ]
+        },
+        "US Census": {
+            "geoid": "0804000",
+            "name": "City of Aurora",
+            "state": "Colorado"
+        },
         "country": "us",
         "state": "co",
         "city": "Aurora"
     },
-    "data": "https://apps2.auroragov.org/OpenData/DataDownload/LL_AddressPoints_SHP.zip",
+    "data": "https://ags.auroragov.org/aurora/rest/services/OpenData/MapServer/9",
     "license": "Crappy License",
     "attribution": "City of Aurora",
-    "note": "Incorrect Projection",
-    "type": "http",
-    "compression": "zip",
+    "type": "ESRI",
     "conform": {
-        "split": "address",
-        "number": "auto_number",
-        "street": "auto_street",
-        "type": "shapefile"
+        "type": "geojson",
+        "number": "ADDRESS_NUMBER",
+        "street": [
+            "STREET_DIRECTION",
+            "STREET_NAME",
+            "STREET_TYPE",
+            "DIRSUF"
+        ],
+        "unit": "ADDRESS_UNIT",
+        "city": "CITY",
+        "postcode": "ZIP_CODE",
+        "region": "COUNTY"
     }
 }

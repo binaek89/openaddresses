@@ -1,11 +1,16 @@
 {
     "type": "http",
     "note": "TOS acceptance means files must be manually downloaded. Proof of license present in expandable section near top of dataset webpage.",
-    "license": "CCBY",
+    "license": {
+        "text": "CCBY",
+        "attribution": true,
+        "share-alike": false
+    },
     "coverage": {
         "city": "강북구",
         "country": "kr",
-        "state": "seoul"
+        "state": "seoul",
+        "geometry": { "type": "Point", "coordinates": [127.008, 37.641] }
     },
     "compression": "zip",
     "skip": true,

@@ -16,9 +16,15 @@
     "type": "http",
     "year": 2014,
     "conform": {
-        "split": "address",
-        "street": "auto_street",
-        "number": "auto_number",
+        "number": "STRT_ADD",
+        "street": [
+            "STRT_PFX",
+            "STRT_NAME",
+            "TYP",
+            "STRT_SUF"
+        ],
+        "unit": "UNIT",
+        "city": "COMMUNITY",
         "type": "shapefile"
     }
 }

@@ -7,6 +7,11 @@
                 37.08
             ]
         },
+        "US Census": {
+            "geoid": "2158836",
+            "name": "City of Paducah",
+            "state": "Kentucky"
+        },
         "country": "us",
         "state": "ky",
         "city": "Paducah"
@@ -18,6 +23,10 @@
             "STPREFIX",
             "STNAME",
             "STTYPE"
+        ],
+        "unit": [
+            "SUB_ADDRESS_TYPE",
+            "SUB_ADDRESS_NUM"
         ]
     },
     "data": "http://map-gis.paducahky.gov/arcgis/rest/services/EmergencyBaseMap/MapServer/3",
